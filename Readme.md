@@ -18,7 +18,7 @@ Currently jQuery Fiji contains the following widgets:
 A Twitter (when not logged in on the start page) like Ticker.
 Well configurable and fully Unit tested.
 
-[Ticker Demo](http://medihack.github.com/jquery-fiji/demos/ticker/ticker.html)
+[Ticker Demo](http://medihack.github.com/fiji/demos/ticker/ticker.html)
 
 The ticker must be a attached to an existing ul element:
 
@@ -80,7 +80,7 @@ make many presumptions about how you would use it. The creation of the
 overlay is even separated from the creation of a dialog on top of it.
 Another strength is its retention of the natural tab order.
 
-[Overlay Demo](http://medihack.github.com/jquery-fiji/demos/overlay/overlay.html)
+[Overlay Demo](http://medihack.github.com/fiji/demos/overlay/overlay.html)
 
 To create a window overlay:
 
@@ -121,7 +121,7 @@ Options can also be set by using `$(window).overlay("option",
 
 A pagination widget that behaves like the [will_paginate](https://github.com/mislav/will_paginate/tree/rails3) (Rails 3 branch) extension.
 
-[JillPaginate Demo](http://medihack.github.com/jquery-fiji/demos/jillpaginate/jillpaginate.html)
+[JillPaginate Demo](http://medihack.github.com/fiji/demos/jillpaginate/jillpaginate.html)
 
 JillPaginate can be used on any empty div:
 
@@ -164,7 +164,7 @@ For more information about those options also see the [will_paginate options](ht
 
 Another pagination widget that behaves like the [Kaminari](https://github.com/amatsuda/kaminari) Rails extension.
 
-[Jaminari Demo](http://medihack.github.com/jquery-fiji/demos/jaminari/jaminari.html)
+[Jaminari Demo](http://medihack.github.com/fiji/demos/jaminari/jaminari.html)
 
 Jaminari can be used on an empty element, like this (could also be a
 normal div):
