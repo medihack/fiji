@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Jaminari Demo</title>
+		<script type="text/javascript" src="../../external/jquery.js"></script>
+		<script type="text/javascript" src="../../external/jquery.ui.core.js"></script>
+		<script type="text/javascript" src="../../external/jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="../../src/jquery.fiji.jaminari.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#paginate").jaminari({
+					currentPage: 6,
+					numPages: 20
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<h1>Jaminari Demo</h1>
+        <nav id="paginate"></nav>
+	</body>
+</html>

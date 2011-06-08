@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Overlay Demo</title>
+		<style type="text/css">
+			.message-box {
+				background-color: #333;
+				border: 8px solid #444;
+				padding: 12px;
+				color: #BBBBBB;
+				width: 400px;
+			}
+			
+			.message-box a {
+				color: #00FFFF;
+			}
+		</style>
+		<script type="text/javascript" src="../../external/jquery.js"></script>
+		<script type="text/javascript" src="../../external/jquery.ui.core.js"></script>
+		<script type="text/javascript" src="../../external/jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="../../src/jquery.fiji.overlay.js"></script>
+		<script type="text/javascript">
+			$(function() {
+          var messageBox = '<div class="message-box"><p>This is a <a href="https://github.com/medihack/fiji">Fiji</a> Overlay Container.</p><p>Please <a href="http://www.cs.tut.fi/~jkorpela/forms/tabbing.html">tab</a> around and compare with other overlays!</p><p>Click the container to close the overlay or press escape (it is fully up to you how you implement this for your dialog).</p></div>';
+					$(window).overlay({escClose: true}).overlay("openContainer", messageBox);
+					$(".message-box").click(function() {
+						$(window).overlay("destroy");
+					});
+			})
+		</script>
+	</head>
+	<body>
+		<h1>Overlay Demo</h1>
+		<p>Curabitur tristique tincidunt condimentum. Sed a elit at lorem <a href="foo">malesuada</a> scelerisque quis sit amet nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis magna, <a href="bar">consequat</a> eget aliquet nec, euismod in enim. Cras facilisis dolor eu sapien ornare quis tempor lorem mattis. Duis ac nunc vel velit imperdiet pretium a vulputate est. Suspendisse potenti. Sed scelerisque <a href="bing">malesuada</a> lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eget mi et nunc dignissim viverra. <a href="bong">Curabitur volutpat</a> dolor nec libero dictum ultrices eleifend velit mollis.</p>
+		<p>Sed scelerisque sapien nisi, eget pharetra massa. Vivamus vel arcu a sapien luctus tempor. Nulla vulputate nulla odio, eget porta enim. Aliquam sit amet erat a urna rhoncus posuere. Phasellus scelerisque pulvinar ultricies. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut rutrum auctor est, ac molestie nulla vehicula ac. Sed adipiscing tortor ut tellus sodales feugiat at et nulla. Phasellus blandit mattis ornare. Aenean ut justo ac urna pharetra placerat. Aliquam porttitor ante nec elit euismod volutpat. Pellentesque viverra turpis nec velit posuere varius. Phasellus molestie aliquet tempor. Curabitur consequat ultricies lorem semper facilisis.</p>
+		<p>Quisque euismod nisi in lectus varius sodales. Fusce a blandit purus. Suspendisse potenti. Praesent hendrerit mauris adipiscing erat rhoncus malesuada. Praesent lacus nibh, ultricies in blandit ut, semper a dui. Quisque vel nisl enim. Aliquam volutpat, sem sit amet pulvinar suscipit, quam massa pellentesque ipsum, quis elementum diam enim et metus. Nam consectetur lectus et orci blandit vitae dapibus quam dictum. Aliquam in luctus dui. Vivamus imperdiet tristique aliquam. Morbi risus sapien, tempor pharetra vehicula non, blandit ut nulla. Praesent dignissim ultrices hendrerit. In dictum vestibulum velit ut venenatis. Aenean tincidunt luctus felis ut vulputate. Vivamus id feugiat justo. Maecenas at velit risus, et ornare leo. Aliquam interdum velit a libero blandit euismod.</p>
+		<p>Nullam hendrerit felis metus, in eleifend metus. Nullam id nunc sed turpis pulvinar elementum. Praesent aliquam rutrum nulla non vestibulum. Aenean diam enim, pharetra sit amet euismod sed, molestie a mauris. Suspendisse vehicula libero nec augue tempus at scelerisque odio malesuada. Nam vitae lacus id sapien iaculis consectetur id id est. Quisque lobortis justo nec nisl auctor at consectetur orci commodo. Etiam ullamcorper faucibus magna, id tincidunt ipsum pretium vitae. Maecenas libero nisl, imperdiet id tempus quis, ultrices at lacus. Pellentesque ultrices quam a dolor suscipit non pulvinar magna blandit. Donec facilisis tristique odio, nec molestie nunc varius et. </p>
+		<p>Maecenas feugiat orci tempor urna fringilla ut lacinia lorem dapibus. Maecenas mollis bibendum iaculis. Nulla imperdiet odio at ipsum mollis quis semper nunc facilisis. Suspendisse porta eros pulvinar leo accumsan malesuada. Vestibulum eu porttitor erat. Suspendisse bibendum suscipit nulla et vestibulum. Ut commodo mattis ultricies. Nunc ac nulla augue. Suspendisse et felis odio. Aliquam aliquet gravida hendrerit. Duis nec ipsum eros. Vestibulum sagittis nibh a nulla imperdiet non faucibus lorem gravida. Vivamus euismod facilisis venenatis. Vivamus lacinia scelerisque libero, vel tristique felis convallis quis. Vivamus vitae tellus massa, nec posuere ipsum. Aliquam aliquet ornare est, id mollis est placerat quis. Mauris arcu sapien, tristique quis elementum at, dignissim at justo. </p>
+		<p>Sed vehicula ipsum sit amet risus porttitor ac dignissim justo blandit. Phasellus vitae leo eu neque sollicitudin auctor. Sed velit metus, ornare nec malesuada vel, porta ut libero. Quisque pellentesque pretium ipsum, aliquet congue erat porta quis. Quisque eleifend varius elit eu eleifend. Curabitur tincidunt diam sit amet neque tempus non hendrerit metus condimentum. Cras euismod sem sit amet nibh lobortis aliquet. Cras in dolor et ipsum venenatis pharetra vitae vel dolor. Integer risus quam, dapibus sed facilisis sed, dignissim vel elit. Cras at urna tortor, sed condimentum erat. Praesent sit amet nunc felis, eu dignissim tellus. Vivamus dapibus, eros interdum sagittis scelerisque, metus sapien tincidunt sem, sit amet accumsan sapien nunc vitae elit. Suspendisse quis nibh ac nisi scelerisque sagittis. Duis non nunc nec nisi scelerisque sodales id non nisi. Aenean porttitor dictum sodales. Integer at justo velit, nec accumsan metus. Fusce magna nulla, congue non convallis at, vulputate non libero. Phasellus nec dolor libero.</p>
+	</body>
+</html>

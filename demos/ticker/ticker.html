@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Ticker Demo</title>
+		<link rel="stylesheet" href="../../themes/jquery.fiji.ticker.css" type="text/css" />
+		<style type="text/css">
+			h2 {
+				margin:0px;
+				font-family:arial, sans-serif;
+				font-size: 16px;
+				line-height:20px;
+				font-weight: 800;
+				color: rgb(195,0,25);
+			}
+
+			img {
+				margin:5px 10px 10px 0px;
+				float:left;
+			}
+
+			p {
+				margin:0px;
+				font-family:arial, sans-serif;
+				font-size: 13px;
+				line-height:18px;
+				font-weight: 400;
+
+			}
+
+			.ago {
+				color:#666666;
+				font-size: 10px;
+			}
+		</style>
+		<script type="text/javascript" src="../../external/jquery.js"></script>
+		<script type="text/javascript" src="../../external/jquery.ui.core.js"></script>
+		<script type="text/javascript" src="../../external/jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="../../src/jquery.fiji.ticker.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var i = 0;
+				$("#ticker").ticker({
+					initialTimeout: 1000,
+					mouseOnTimeout: 4000,
+					mouseOffTimeout: 3000,
+					scrollTime: 1200,
+					fadeTime: 1000,
+                    fixContainer: true,
+					nextItem: function(lastItem) {
+						return lastItem;
+					}
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<h1>Ticker Demo</h1>
+		<ul id="ticker">
+			<li>
+			<img src="http://www.gravatar.com/avatar/7483?s=48&d=identicon" />
+			<h2>Accus nossimo </h2>
+			<p>blandae des esti to es etur, occum quaerumquos am, nonsequos
+			quis illest eos ma core nus, comnis eatiissit
+			ex</p>
+			<p class="ago">3 hours ago</p>
+			</li>
+			<li>
+			<img src="http://www.gravatar.com/avatar/7183?s=48&d=identicon" />
+			<h2>sendit undam est et</h2>
+			<p>moluptae Ovit aliqui qui blantio ea voluteste sam ipsam voluptatia
+			vel inus mos cum si quo doluptate et omnienis que
+			<p class="ago">4 hours ago</p>
+			</li>
+			<li>
+			<img src="http://www.gravatar.com/avatar/7283?s=48&d=identicon" />
+			<h2>sam laborrorum</h2>
+			<p>laciasima net aut eossit acerum ea que nulpa dolut officilignim
+			eosapiduntem dolori coraepr aerchiliquis erum ad et
+			<p class="ago">5 hours ago</p>
+			</li>
+			<li>
+			<img src="http://www.gravatar.com/avatar/7383?s=48&d=identicon" />
+			<h2>temperunto optatem</h2>
+			<p>laborep rerunt fugit, is mi, volor sit et hiliatiunt, tem aut
+			laut unt ati cum ra velia aut officti adis exerumentur
+			<p class="ago">5 hours ago</p>
+			</li>
+			<li>
+			<img src="http://www.gravatar.com/avatar/7683?s=48&d=identicon" />
+			<h2>cupiet lacerer umquia</h2>
+			<p>expella quo tem quia sequasi moluptam laboribus nulpa qui dite
+			consed molupta tecesequae moloresti autem et faccum</p>
+			<p class="ago">7 hours ago</p>
+			</li>
+			<li>
+			<img src="http://www.gravatar.com/avatar/7783?s=48&d=identicon" />
+			<h2>qui con es dit </h2>
+			<p>faccab idem et eium accusam ut et laces nos eatendae ni nis
+			eos apersperoria con porposa in repudae post, simus</p>
+			<p class="ago">8 hours ago</p>
+			</li>
+		</ul>
+	</body>
+</html>

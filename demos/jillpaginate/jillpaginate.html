@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>WillPaginate Demo</title>
+		<script type="text/javascript" src="../../external/jquery.js"></script>
+		<script type="text/javascript" src="../../external/jquery.ui.core.js"></script>
+		<script type="text/javascript" src="../../external/jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="../../src/jquery.fiji.jillpaginate.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#paginate").jillpaginate({
+					currentPage: 10,
+					totalPages: 30
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<h1>WillPaginate Demo</h1>
+        <div id="paginate">
+        </div>
+	</body>
+</html>
