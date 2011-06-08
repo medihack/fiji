@@ -4,11 +4,12 @@
 
 The jQuery Fiji project is a repository for widgets built upon the jQuery UI widget library. All widgets were created for our own projects needs in mind, but should be universal applicable. The widgets are fully Unit tested (with qUnit) and easily configurable.
 
-Currently jQuery Fiji contains 2 widgets:
+Currently jQuery Fiji contains the following widgets:
 
-* jQuery Fiji JillPaginate - a pagination widget that works like the will_paginate Rails extension
 * jQuery Fiji Ticker - a Twitter like ticker widget
 * jQuery Fiji Overlay - an overlay that can present an optional dialog container
+* jQuery Fiji JillPaginate - a pagination widget that is based on the WillPaginate Rails extension
+* jQuery Fiji Jaminari - an alternative pagination widget that is based on the Kaminari Rails extension
 
 ## Widgets
 
